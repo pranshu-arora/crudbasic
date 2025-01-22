@@ -36,8 +36,8 @@ public class PersonController {
 
     @PutMapping("/{PersonID}")
     public ResponseEntity<String> updatePerson(@PathVariable Long PersonID, @RequestBody Person updatedPersonDetails) {
-            personService.updatePersonDetails(PersonID, updatedPersonDetails);
-            return ResponseEntity.ok("Successfully UPDATED Person Details");
+        personService.updatePersonDetails(PersonID, updatedPersonDetails);
+        return ResponseEntity.ok("Successfully UPDATED Person Details");
     }
 
 
